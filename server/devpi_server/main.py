@@ -334,6 +334,12 @@ class XOM:
                                  "/{user}/{index}/+simple/{project}")
         pyramid_config.add_route("/{user}/{index}/+simple/{project}/",
                                  "/{user}/{index}/+simple/{project}/")
+        pyramid_config.add_route("/{user}/{index}/simple", "/{user}/{index}/simple")
+        pyramid_config.add_route("/{user}/{index}/simple/", "/{user}/{index}/simple/")
+        pyramid_config.add_route("/{user}/{index}/simple/{project}",
+                                 "/{user}/{index}/simple/{project}")
+        pyramid_config.add_route("/{user}/{index}/simple/{project}/",
+                                 "/{user}/{index}/simple/{project}/")
         pyramid_config.add_route("/{user}/{index}/+simple/{project}/refresh",
                                  "/{user}/{index}/+simple/{project}/refresh")
         pyramid_config.add_route("/{user}/{index}/{project}/{version}",
